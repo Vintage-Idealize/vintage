@@ -2,12 +2,29 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
+//import controller
+const controller = require('./controller');
+
 app.use(cors());
 app.use(
     express.urlencoded({
-        extended:true,
+        extended: true,
     })
 );
 app.use(express.json());
 
-module.exports=app;
+app.get('/users', (req, res) => {
+    controller.getUsers(users => {
+        res.send(users);
+    })
+});
+
+app.get('/user', (req, res) => {
+    const id = req.query.id;
+    controller.getUserById(id, user => {
+        res.send(user);
+    })
+});
+
+
+module.exports = app;
