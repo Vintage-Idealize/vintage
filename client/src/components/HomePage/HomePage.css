@@ -1,49 +1,82 @@
+/* src/components/HomePage/HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
+
 .header {
     background-color: #b18a1b;
     padding: 20px;
     text-align: center;
     color: white;
 }
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .header nav a {
-    margin: 0 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 .banner {
-    /* background: url('path_to_your_background_image') no-repeat center center; */
+    position: relative;
+    background: url('/src/assets/homepagebg.png') no-repeat center center;
     background-size: cover;
     padding: 50px 20px;
     text-align: center;
     color: black;
+    height: 400px;
 }
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity and color */
+}
+
 .banner h1 {
-    font-family: 'Cursive', sans-serif;
+    position: relative;
+    z-index: 1;
+    font-family: 'Italianno', cursive; /* Apply the Italianno font */
     font-size: 3em;
     margin: 0;
 }
+
 .banner p {
+    position: relative;
+    z-index: 1;
     font-size: 1.2em;
 }
+
 .new-arrivals {
     padding: 20px;
     text-align: center;
 }
+
 .new-arrivals h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
+
 .products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .product {
     width: 200px;
     margin: 10px;
@@ -52,12 +85,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .product img {
     width: 100%;
     height: 300px;
     background-color: #dcdcdc;
     border-radius: 10px;
 }
+
 .product p {
     margin: 10px 0 0;
 }
