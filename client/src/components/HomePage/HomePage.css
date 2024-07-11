@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.header {
+    background-color: #b18a1b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.banner {
+    /* background: url('path_to_your_background_image') no-repeat center center; */
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+}
+.banner h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+.banner p {
+    font-size: 1.2em;
+}
+.new-arrivals {
+    padding: 20px;
+    text-align: center;
+}
+.new-arrivals h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product img {
+    width: 100%;
+    height: 300px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+.product p {
+    margin: 10px 0 0;
+}
