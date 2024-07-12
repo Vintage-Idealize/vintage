@@ -34,11 +34,6 @@ const HomePage = () => {
               <p className="product-price">LKR 15000.00</p>
             </div>
             <div className="product">
-              <img src="/home-4.jpg" alt="Bohemian Rhapsody" />
-              <p className="product-name">Bohemian Rhapsody</p>
-              <p className="product-price">LKR 12000.00</p>
-            </div>
-            <div className="product">
               <img src="/home-5.jpg" alt="Garden Bliss" />
               <p className="product-name">Garden Bliss</p>
               <p className="product-price">LKR 12000.00</p>
@@ -73,12 +68,6 @@ const HomePage = () => {
               <Link to="/sellerPage">
                 <img src="/home-8.jpg" alt="Buddhi Batiks" />
                 <p className="product-name">Buddhi Batiks</p>
-              </Link>
-            </div>
-            <div className="product">
-              <Link to="/sellerPage">
-                <img src="/home-5.jpg" alt="Creative Couture" />
-                <p className="product-name">Creative Couture</p>
               </Link>
             </div>
           </div>
