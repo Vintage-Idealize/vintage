@@ -1,12 +1,12 @@
 import React from 'react';
 import './HomePage.css';
-import SeekerNavBar from '../nav-bar/seeker-nav-bar';
+import BuyerNavBar from '../nav-bar/buyer-nav-bar';
 
 
 const HomePage = () => {
   return (
     <div>
-      <SeekerNavBar width="100%"/>
+      <BuyerNavBar width="100%"/>
       <div className="banner">
         <h1>Couture Taprobana</h1>
         <p>Each of our products starts with the finest material, hand chosen to ensure a range of high quality choices for our valued customers.</p>

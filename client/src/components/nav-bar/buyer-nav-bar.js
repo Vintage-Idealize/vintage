@@ -13,10 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['dashboard', 'product', 'order'];
+
+const pages = ['Home', 'New Arrival', 'Clothing'];
 const settings = ['Profile', 'Account', 'Logout'];
 
-function CaAppBar() {
+function BuyerNavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -172,4 +173,4 @@ function CaAppBar() {
   );
 }
 
-export default CaAppBar;
+export default BuyerNavBar;

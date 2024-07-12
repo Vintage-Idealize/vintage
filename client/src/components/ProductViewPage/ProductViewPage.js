@@ -1,7 +1,7 @@
 // src/components/ProductViewPage.js
 import React, { useState } from 'react';
 import './ProductViewPage.css';
-import SeekerNavBar from '../nav-bar/seeker-nav-bar';
+import BuyerNavBar from '../nav-bar/buyer-nav-bar';
 
 const ProductViewPage = () => {
   const [quantity, setQuantity] = useState(1);
@@ -15,7 +15,7 @@ const ProductViewPage = () => {
   const toggleWishlist = () => setWishlist(!wishlist);
 
   return (
-    <div><SeekerNavBar width="100%"/>
+    <div><BuyerNavBar width="100%"/>
     <div className="product-view-page">
       <div className="product-details">
         <div className="product-images">

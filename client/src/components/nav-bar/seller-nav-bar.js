@@ -13,11 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-
-const pages = ['Home', 'New Arrival', 'Clothing'];
+const pages = ['dashboard', 'product', 'order'];
 const settings = ['Profile', 'Account', 'Logout'];
 
-function SeekerNavBar() {
+function SellerAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -173,4 +172,4 @@ function SeekerNavBar() {
   );
 }
 
-export default SeekerNavBar;
+export default SellerAppBar;

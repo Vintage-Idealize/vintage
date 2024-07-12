@@ -16,7 +16,7 @@ import {
 } from 'recharts';
 
 import './dashboard.css';
-import CaAppBar from '../nav-bar/ca-nav-bar';
+import SellerAppBar from '../nav-bar/seller-nav-bar';
 import ProductMenu from './product-menu';
 import DayMenu from './day-menu';
 import AddProductDialog from '../addProduct/addProduct';
@@ -63,7 +63,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <CaAppBar width= "100%"/>
+      <SellerAppBar width= "100%"/>
       <main>
         <h2 className='hello'>Hello, Ashan!</h2>
         <div className="charts-container">

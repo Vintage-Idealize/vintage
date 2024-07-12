@@ -131,6 +131,7 @@ const AddProductDialog = () => {
             >
               <MenuItem value="batik">Batik</MenuItem>
               <MenuItem value="beeralu">Beeralu</MenuItem>
+              <MenuItem value="beeralu">Other</MenuItem>
             </Select>
           </FormControl>
           <UploadImageButton
