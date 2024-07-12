@@ -68,7 +68,7 @@ const Dashboard = () => {
         <div className="charts-container">
           <div className="line-chart">
             <div class="line-header">
-              <div className='line-title'>Sales For Products</div>
+              <div><h3>Sales For Products</h3></div>
               <div className='menu'>
               <div><DayMenu/></div>
                 <div><ProductMenu/></div>
@@ -86,7 +86,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
           <div className="chart">
-          <div className='chart-title'>Orders By Category</div>
+          <h3>Orders By Category</h3>
             <ResponsiveContainer width="100%" height={300}>
               <PieChart>
                 <Pie
@@ -117,6 +117,7 @@ const Dashboard = () => {
            
           </div>
           <div className="chart">
+            <h3>Daily Number Of Orders</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={dataOrders}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -129,6 +130,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
           <div className="chart">
+            <h3>Daily Number of New Customers</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={dataCustomers}>
                 <CartesianGrid strokeDasharray="3 3" />

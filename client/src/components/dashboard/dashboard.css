@@ -49,10 +49,8 @@ body {
 
 }
 
-.line-title{
-    font-weight: bold;
+.line-header div h3{
     text-align: left;
-
 }
 
 .stats-container {
