@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import BuyerNavBar from '../nav-bar/buyer-nav-bar';
-
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -50,20 +50,34 @@ const HomePage = () => {
         <div className="products-container">
           <div className="products">
             <div className="product">
-              <img src="/home-1.jpg" alt="Kaumadi Couture" />
-              <p className="product-name">Kaumadi Couture</p>
+              <Link to="/sellerPage">
+                <img src="/home-1.jpg" alt="Kaumadi Couture" />
+                <p className="product-name">Kaumadi Couture</p>
+              </Link>
             </div>
             <div className="product">
-              <img src="/home-6.jpg" alt="Ceylon Threads" />
-              <p className="product-name">Ceylon Threads</p>
+              <Link to="/sellerPage">
+                <img src="/home-6.jpg" alt="Ceylon Threads" />
+                <p className="product-name">Ceylon Threads</p>
+              </Link>
             </div>
             <div className="product">
-              <img src="/home-7.jpg" alt="Laksalu" />
-              <p className="product-name">Laksalu</p>
+              <Link to="/sellerPage">
+                <img src="/home-7.jpg" alt="Laksalu" />
+                <p className="product-name">Laksalu</p>
+              </Link>
             </div>
             <div className="product">
-              <img src="/home-8.jpg" alt="Buddhi Batiks" />
-              <p className="product-name">Buddhi Batiks</p>
+              <Link to="/sellerPage">
+                <img src="/home-8.jpg" alt="Buddhi Batiks" />
+                <p className="product-name">Buddhi Batiks</p>
+              </Link>
+            </div>
+            <div className="product">
+              <Link to="/sellerPage">
+                <img src="/home-5.jpg" alt="Creative Couture" />
+                <p className="product-name">Creative Couture</p>
+              </Link>
             </div>
           </div>
         </div>
