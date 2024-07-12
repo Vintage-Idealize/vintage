@@ -17,9 +17,9 @@ const ProductViewPage = () => {
   const changeMainImage = (image) => setMainImage(image); // Function to change the main image
 
   return (
-    
+    <div>
+    <BuyerNavBar width ='100%'/>
     <div className="product-view-page">
-      <BuyerNavBar/>
       <div className="product-details">
         <div className="product-images">
           <div className="main-image">
@@ -96,6 +96,7 @@ const ProductViewPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

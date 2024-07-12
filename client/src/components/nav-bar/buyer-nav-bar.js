@@ -38,7 +38,7 @@ function BuyerNavBar() {
     <AppBar 
       position="static" 
       sx={{ 
-        backgroundColor: 'white', 
+        backgroundColor: '#EFEEE6', 
         height: '4em', 
         borderBottom: '1px solid rgba(184, 134, 11, 0.3)',
         boxShadow: '0 2px 4px rgba(184, 134, 11, 0.2)' 
