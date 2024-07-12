@@ -1,4 +1,3 @@
-/* src/components/HomePage/HomePage.css */
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 body {
@@ -32,7 +31,7 @@ body {
     background: url('/src/assets/homepagebg.png') no-repeat center center;
     background-size: cover;
     padding: 50px 20px;
-    text-align: center;
+    padding-left: 30px;
     color: black;
     height: 400px;
 }
@@ -48,37 +47,65 @@ body {
 }
 
 .banner h1 {
-    position: relative;
-    z-index: 1;
     font-family: 'Italianno', cursive; /* Apply the Italianno font */
-    font-size: 3em;
-    margin: 0;
+    font-size: 4em;
 }
 
 .banner p {
-    position: relative;
-    z-index: 1;
     font-size: 1.2em;
 }
 
-.new-arrivals {
-    padding: 20px;
-    text-align: center;
+.banner h1, .banner p {
+    text-align: left;
+    position: relative;
 }
 
-.new-arrivals h2 {
+.new-arrivals, .designer {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.new-arrivals h2, .designer h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.new-arrivals h2::before, .new-arrivals h2::after,
+.designer h2::before, .designer h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: #b18a1b;
+}
+
+.new-arrivals h2::before, .designer h2::before {
+    left: -120px;
+}
+
+.new-arrivals h2::after, .designer h2::after {
+    right: -120px;
+}
+
+.products-container {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .products {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product {
-    width: 200px;
+    min-width: 300px;
+    max-width: 300px;
     margin: 10px;
     padding: 10px;
     background-color: white;
@@ -88,11 +115,20 @@ body {
 
 .product img {
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #dcdcdc;
     border-radius: 10px;
 }
 
-.product p {
-    margin: 10px 0 0;
+.product-name {
+    margin: 10px 0 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.product-price {
+    margin: 5px 0 5px;
+    color: #b18a1b;
+    font-weight: bold;
+    font-size: 1.2em;
 }

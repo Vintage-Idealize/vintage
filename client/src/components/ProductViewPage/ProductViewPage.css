@@ -1,4 +1,3 @@
-/* src/components/ProductViewPage.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,20 +8,25 @@ body {
 .header {
     background-color: #b18a1b;
     padding: 20px;
-    text-align: center;
     color: white;
+    width: 100%; /* Ensure header spans full width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .header nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit the max width for better design */
+    margin: 0 auto; /* Center the nav */
+    width: 100%; /* Ensure nav spans full width */
 }
 
 .header nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0 15px; /* Add horizontal padding to each link */
 }
 
 .product-view-page {
@@ -48,23 +52,42 @@ body {
     align-items: center;
 }
 
-.main-image {
+.main-image img {
     width: 100%;
-    height: 500px;
-    background-color: #dcdcdc;
-    margin-bottom: 20px;
+    height: 600px; /* Increased the height to make the main image frame bigger */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 10px; /* Reduced the bottom margin */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.thumbnail-images-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .thumbnail-images {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    gap: 5px; /* Reduced the gap between thumbnails */
 }
 
 .thumbnail {
-    width: 100px;
-    height: 100px;
-    background-color: #dcdcdc;
+    width: 80px; /* Reduced the width to fit the new layout */
+    height: 80px; /* Reduced the height to fit the new layout */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    overflow: hidden; /* Ensures the image fits within the thumbnail div */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.thumbnail.selected {
+    border: 2px solid #b18a1b; /* Adds a border to indicate the selected thumbnail */
 }
 
 .product-info {
@@ -72,7 +95,8 @@ body {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the top */
+    text-align: left; /* Align text to the left */
 }
 
 .product-info h1 {
@@ -87,7 +111,7 @@ body {
 .size-options, .color-options {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Add more space between size and color options */
 }
 
 .size-options span, .color-options span {
@@ -111,7 +135,6 @@ body {
     font-size: 1.5em;
     color: #b18a1b;
     margin-bottom: 20px;
-    align-items: flex-start;
 }
 
 .quantity-control {
@@ -141,6 +164,7 @@ body {
     color: white;
     cursor: pointer;
     margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
 }
 
 .add-to-cart:hover {
@@ -149,12 +173,14 @@ body {
 
 .wishlist {
     cursor: pointer;
-    color: red;
+    color: grey;
     margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
 }
 
 .additional-info {
     margin-top: 20px;
+    text-align: left; /* Align text to the left */
 }
 
 .additional-info details {

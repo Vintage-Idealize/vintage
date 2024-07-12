@@ -1,10 +1,10 @@
-// src/components/ProductViewPage.js
 import React, { useState } from 'react';
 import './ProductViewPage.css';
 
 const ProductViewPage = () => {
   const [quantity, setQuantity] = useState(1);
   const [wishlist, setWishlist] = useState(false);
+  const [mainImage, setMainImage] = useState('/home-1.jpg'); // State for the main image
 
   const incrementQuantity = () => setQuantity(quantity + 1);
   const decrementQuantity = () => {
@@ -12,6 +12,8 @@ const ProductViewPage = () => {
   };
 
   const toggleWishlist = () => setWishlist(!wishlist);
+
+  const changeMainImage = (image) => setMainImage(image); // Function to change the main image
 
   return (
     <div className="product-view-page">
@@ -26,16 +28,39 @@ const ProductViewPage = () => {
 
       <div className="product-details">
         <div className="product-images">
-          <div className="main-image"></div>
+          <div className="main-image">
+            <img src={mainImage} alt="Main Product" />
+          </div>
           <div className="thumbnail-images">
-            <div className="thumbnail"></div>
-            <div className="thumbnail"></div>
-            <div className="thumbnail"></div>
+            <div 
+              className={`thumbnail ${mainImage === '/home-1.jpg' ? 'selected' : ''}`} 
+              onClick={() => changeMainImage('/home-1.jpg')}
+            >
+              <img src="/home-1.jpg" alt="Thumbnail 0" />
+            </div>
+            <div 
+              className={`thumbnail ${mainImage === '/p1.jpg' ? 'selected' : ''}`} 
+              onClick={() => changeMainImage('/p1.jpg')}
+            >
+              <img src="/p1.jpg" alt="Thumbnail 1" />
+            </div>
+            <div 
+              className={`thumbnail ${mainImage === '/p2.jpg' ? 'selected' : ''}`} 
+              onClick={() => changeMainImage('/p2.jpg')}
+            >
+              <img src="/p2.jpg" alt="Thumbnail 2" />
+            </div>
+            <div 
+              className={`thumbnail ${mainImage === '/p3.jpg' ? 'selected' : ''}`} 
+              onClick={() => changeMainImage('/p3.jpg')}
+            >
+              <img src="/p3.jpg" alt="Thumbnail 3" />
+            </div>
           </div>
         </div>
 
         <div className="product-info">
-          <h1>BUTTON DOWN MINI DRESS</h1>
+          <h1>Lace Elegance</h1>
           <div className="product-options">
             <div className="size-options">
               <span>Size</span>
@@ -48,11 +73,10 @@ const ProductViewPage = () => {
             </div>
             <div className="color-options">
               <span>Color</span>
-              <button>pink</button>
-              <button>white</button>
+              <button>White</button>
             </div>
           </div>
-          <p className="price">LKR 2000.00</p>
+          <p className="price">LKR 20000.00</p>
           <div className="quantity-control">
             <button onClick={decrementQuantity}>-</button>
             <input type="text" value={quantity} readOnly />
@@ -72,7 +96,7 @@ const ProductViewPage = () => {
               <p>Additional information...</p>
             </details>
             <details>
-              <summary>Seller</summary>
+              <summary>SELLER INFORMATION</summary>
               <p>Information...</p>
             </details>
           </div>
