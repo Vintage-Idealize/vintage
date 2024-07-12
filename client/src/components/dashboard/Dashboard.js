@@ -63,7 +63,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <SellerAppBar width= "100%"/>
+      <SellerAppBar/>
       <main>
         <h2 className='hello'>Hello, Ashan!</h2>
         <div className="charts-container">

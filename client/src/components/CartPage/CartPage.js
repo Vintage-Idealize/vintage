@@ -38,7 +38,7 @@ const CartPage = () => {
   const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
-    <div> <BuyerNavBar width="100%"/>
+    <div> <BuyerNavBar/>
     <div className="cart-page">
       <div className="cart-container">
         <h1>Your Cart</h1>
