@@ -16,7 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['dashboard', 'product', 'order'];
 const settings = ['Profile', 'Account', 'Logout'];
 
-function ResponsiveAppBar() {
+function CaAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -172,4 +172,4 @@ function ResponsiveAppBar() {
   );
 }
 
-export default ResponsiveAppBar;
+export default CaAppBar;

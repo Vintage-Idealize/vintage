@@ -1,6 +1,7 @@
 // src/components/CartPage.js
 import React, { useState } from 'react';
 import './CartPage.css';
+import SeekerNavBar from '../nav-bar/seeker-nav-bar';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([
@@ -37,16 +38,8 @@ const CartPage = () => {
   const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
+    <div> <SeekerNavBar width="100%"/>
     <div className="cart-page">
-      <header className="header">
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Home</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Clothing</a>
-        </nav>
-      </header>
-
       <div className="cart-container">
         <h1>Your Cart</h1>
         <table className="cart-table">
@@ -96,6 +89,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

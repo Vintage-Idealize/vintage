@@ -1,6 +1,7 @@
 // src/components/ProductViewPage.js
 import React, { useState } from 'react';
 import './ProductViewPage.css';
+import SeekerNavBar from '../nav-bar/seeker-nav-bar';
 
 const ProductViewPage = () => {
   const [quantity, setQuantity] = useState(1);
@@ -14,16 +15,8 @@ const ProductViewPage = () => {
   const toggleWishlist = () => setWishlist(!wishlist);
 
   return (
+    <div><SeekerNavBar width="100%"/>
     <div className="product-view-page">
-      <header className="header">
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Home</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Clothing</a>
-        </nav>
-      </header>
-
       <div className="product-details">
         <div className="product-images">
           <div className="main-image"></div>
@@ -79,6 +72,7 @@ const ProductViewPage = () => {
         </div>
       </div>
     </div>
+    </div> 
   );
 };
 

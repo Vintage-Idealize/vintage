@@ -13,10 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
+
 const pages = ['Home', 'New Arrival', 'Clothing'];
 const settings = ['Profile', 'Account', 'Logout'];
 
-function ResponsiveAppBar() {
+function SeekerNavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -172,4 +173,4 @@ function ResponsiveAppBar() {
   );
 }
 
-export default ResponsiveAppBar;
+export default SeekerNavBar;
