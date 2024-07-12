@@ -11,8 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-
 
 const pages = ['Home', 'New Arrival', 'Clothing'];
 const settings = ['Profile', 'Account', 'Logout'];
@@ -48,7 +46,9 @@ function BuyerNavBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: '#B8860B' }} />
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
+            <img src="/vintage-icon.jpg" alt="Logo" style={{ height: '2.5em', borderRadius: '50%' }} />
+          </Box>
           <Typography
             variant="h6"
             noWrap
@@ -64,7 +64,6 @@ function BuyerNavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -105,7 +104,9 @@ function BuyerNavBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: '#B8860B' }} />
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>
+            <img src="/vintage-icon.jpg" alt="Logo" style={{ height: '2.5em' }} />
+          </Box>
           <Typography
             variant="h5"
             noWrap
