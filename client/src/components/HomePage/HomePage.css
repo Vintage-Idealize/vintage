@@ -143,3 +143,13 @@ body {
     text-decoration: none; /* Ensures underline does not appear on hover */
     color: #b18a1b; /* Optional: Change color on hover */
 }
+/* Remove underline from links */
+.designer .product a, .new-arrivals .product a {
+    text-decoration: none;
+    color: inherit; /* Ensures the link color matches the surrounding text */
+}
+
+.designer .product a:hover, .new-arrivals .product a:hover {
+    text-decoration: none; /* Ensures underline does not appear on hover */
+    color: #b18a1b; /* Optional: Change color on hover */
+}
