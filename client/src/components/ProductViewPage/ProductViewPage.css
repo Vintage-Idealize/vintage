@@ -95,8 +95,8 @@ body {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    text-align: left; /* Align text to the left */
+   justify-content: flex-start; /* Align content to the top */
+   text-align: left; /* Align text to the left */
 }
 
 .product-info h1 {
