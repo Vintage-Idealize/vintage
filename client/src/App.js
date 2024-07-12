@@ -2,7 +2,8 @@ import './App.css';
 import Dashboard from './components/dashboard/dashboard';
 import HomePage from './components/HomePage/HomePage';
 import ProductViewPage from './components/ProductViewPage/ProductViewPage';
-import CartPage from './components/CartPage/CartPage';
+import CartPage from './components/CartPage/CartPage'
+import SellerPage from './components/SellerPage/SellerPage';
 
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
 
       {/* <Dashboard/> */}
-       <HomePage /> 
-      <ProductViewPage />
+       {/* <HomePage />  */}
+     <SellerPage />
+      {/* <ProductViewPage /> */}
       {/* <CartPage /> */}
     </div>
   );
