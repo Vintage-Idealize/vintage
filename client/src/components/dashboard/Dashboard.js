@@ -22,13 +22,13 @@ import DayMenu from './day-menu';
 
 
 const dataSales = [
-  { day: 1, sales: 200 },
-  { day: 2, sales: 100 },
-  { day: 3, sales: 150 },
-  { day: 4, sales: 100 },
-  { day: 5, sales: 200 },
-  { day: 6, sales: 400 },
-  { day: 7, sales: 300 },
+  { day: 1, sales: 20000 },
+  { day: 2, sales: 10000 },
+  { day: 3, sales: 15000 },
+  { day: 4, sales: 10000 },
+  { day: 5, sales: 20000 },
+  { day: 6, sales: 40000 },
+  { day: 7, sales: 30000 },
 ];
 
 const dataOrders = [
