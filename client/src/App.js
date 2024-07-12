@@ -10,7 +10,7 @@ function App() {
     <div className="App">
 
       {/* <Dashboard/> */}
-      {/* <HomePage /> */}
+       <HomePage /> 
       <ProductViewPage />
       {/* <CartPage /> */}
     </div>
