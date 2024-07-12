@@ -19,6 +19,7 @@ import './dashboard.css';
 import CaAppBar from '../nav-bar/ca-nav-bar';
 import ProductMenu from './product-menu';
 import DayMenu from './day-menu';
+import AddProductDialog from '../addProduct/addProduct';
 
 
 const dataSales = [
@@ -143,7 +144,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
         </div>
-
+        <AddProductDialog/>
       </main>
     </div>
   );
