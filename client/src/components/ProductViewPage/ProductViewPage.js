@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProductViewPage.css';
+import BuyerNavBar from '../nav-bar/buyer-nav-bar';
 
 const ProductViewPage = () => {
   const [quantity, setQuantity] = useState(1);
@@ -16,16 +17,8 @@ const ProductViewPage = () => {
   const changeMainImage = (image) => setMainImage(image); // Function to change the main image
 
   return (
+    <div><BuyerNavBar width="100%"/>
     <div className="product-view-page">
-      <header className="header">
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Home</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Clothing</a>
-        </nav>
-      </header>
-
       <div className="product-details">
         <div className="product-images">
           <div className="main-image">
@@ -103,6 +96,7 @@ const ProductViewPage = () => {
         </div>
       </div>
     </div>
+    </div> 
   );
 };
 

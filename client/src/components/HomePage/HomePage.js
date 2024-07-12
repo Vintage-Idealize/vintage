@@ -1,18 +1,12 @@
 import React from 'react';
 import './HomePage.css';
+import BuyerNavBar from '../nav-bar/buyer-nav-bar';
+
 
 const HomePage = () => {
   return (
     <div>
-      <header className="header">
-        <nav>
-          {/* <a href="#">Logo</a>
-          <a href="#">Home</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Clothing</a> */}
-        </nav>
-      </header>
-
+      <BuyerNavBar width="100%"/>
       <div className="banner">
         <h1>Couture Taprobana</h1>
         <p>Each of our products starts with the finest material, hand chosen to ensure a range of high quality choices for our valued customers.</p>

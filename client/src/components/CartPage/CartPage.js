@@ -1,24 +1,25 @@
 // src/components/CartPage.js
 import React, { useState } from 'react';
 import './CartPage.css';
+import BuyerNavBar from '../nav-bar/buyer-nav-bar';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      name: "CLASSIC SEAMLESS WOMEN'S LONG SLEEVE TEE",
+      name: "CLASSIC SEAMLESS WOMEN'S LONG SLEEVE DRESS",
       description: "Heather Navy Blue / S",
       price: 4490,
       quantity: 1,
-      image: "path_to_image_1"
+      image: "/assets/home-5.jpg"
     },
     {
       id: 2,
-      name: "GLOBE SUPERSIZE TEE - UNISEX",
+      name: "FULL FLARED MAXI DRESS",
       description: "Grey / L",
       price: 3850,
       quantity: 1,
-      image: "path_to_image_2"
+      image: "/assets/home-1.jpg"
     }
   ]);
 
@@ -37,16 +38,8 @@ const CartPage = () => {
   const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
+    <div> <BuyerNavBar width="100%"/>
     <div className="cart-page">
-      <header className="header">
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Home</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Clothing</a>
-        </nav>
-      </header>
-
       <div className="cart-container">
         <h1>Your Cart</h1>
         <table className="cart-table">
@@ -62,7 +55,9 @@ const CartPage = () => {
               <tr key={item.id}>
                 <td>
                   <div className="product-info">
+                    <div>
                     <img src={item.image} alt={item.name} />
+                    </div>
                     <div>
                       <p className="product-name">{item.name}</p>
                       <p className="product-description">{item.description}</p>
@@ -96,6 +91,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

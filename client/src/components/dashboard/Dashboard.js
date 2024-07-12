@@ -16,19 +16,20 @@ import {
 } from 'recharts';
 
 import './dashboard.css';
-import ResponsiveAppBar from '../nav-bar/ca-nav-bar';
+import SellerAppBar from '../nav-bar/seller-nav-bar';
 import ProductMenu from './product-menu';
 import DayMenu from './day-menu';
+import AddProductDialog from '../addProduct/addProduct';
 
 
 const dataSales = [
-  { day: 1, sales: 200 },
-  { day: 2, sales: 100 },
-  { day: 3, sales: 150 },
-  { day: 4, sales: 100 },
-  { day: 5, sales: 200 },
-  { day: 6, sales: 400 },
-  { day: 7, sales: 300 },
+  { day: 1, sales: 20000 },
+  { day: 2, sales: 10000 },
+  { day: 3, sales: 15000 },
+  { day: 4, sales: 10000 },
+  { day: 5, sales: 20000 },
+  { day: 6, sales: 40000 },
+  { day: 7, sales: 30000 },
 ];
 
 const dataOrders = [
@@ -62,7 +63,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <ResponsiveAppBar/>
+      <SellerAppBar width= "100%"/>
       <main>
         <h2 className='hello'>Hello, Ashan!</h2>
         <div className="charts-container">
@@ -143,7 +144,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
         </div>
-
+        <AddProductDialog/>
       </main>
     </div>
   );
