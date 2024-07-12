@@ -17,6 +17,8 @@ import {
 
 import './dashboard.css';
 import ResponsiveAppBar from '../nav-bar/ca-nav-bar';
+import ProductMenu from './product-menu';
+import DayMenu from './day-menu';
 
 
 const dataSales = [
@@ -27,8 +29,6 @@ const dataSales = [
   { day: 5, sales: 200 },
   { day: 6, sales: 400 },
   { day: 7, sales: 300 },
-  { day: 8, sales: 200 },
-  { day: 9, sales: 500 },
 ];
 
 const dataOrders = [
@@ -54,7 +54,7 @@ const dataCustomers = [
 const dataCategory = [
   { name: 'Men', value: 53 },
   { name: 'Women', value: 412 },
-  { name: 'Kids', value: 731 },
+  { name: 'Kids', value: 200 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
@@ -62,11 +62,18 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <ResponsiveAppBar position="sticky"/>
+      <ResponsiveAppBar/>
       <main>
         <h2 className='hello'>Hello, Ashan!</h2>
         <div className="charts-container">
-          <div className="chart">
+          <div className="line-chart">
+            <div class="line-header">
+              <div className='line-title'>Sales For Products</div>
+              <div className='menu'>
+              <div><DayMenu/></div>
+                <div><ProductMenu/></div>
+                </div>
+              </div>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={dataSales}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -79,6 +86,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
           <div className="chart">
+          <div className='chart-title'>Orders By Category</div>
             <ResponsiveContainer width="100%" height={300}>
               <PieChart>
                 <Pie
@@ -102,12 +110,11 @@ const Dashboard = () => {
 
         <div className="stats-container">
           <div className="stat">
-            <p>Average Daily Sales</p>
-            <h2>LKR 20,000</h2>
-            <p>Average Daily Orders</p>
-            <h2>100</h2>
-            <p>Pending Orders</p>
-            <h2>500</h2>
+            <h3>Sales static</h3>
+            <div className='each-stat'><div className='stat-title'>Average Daily Sales</div><div className='stat-value'>LKR 20,000</div></div>
+            <div className='each-stat'><div className='stat-title'>Average Daily Orders</div><div className='stat-value'>LKR 20,000</div></div>
+            <div className='each-stat'><div className='stat-title'>Pending Orders</div><div className='stat-value'>LKR 20,000</div></div>
+           
           </div>
           <div className="chart">
             <ResponsiveContainer width="100%" height={300}>
@@ -135,10 +142,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="actions-container">
-          <button>View Orders</button>
-          <button>Add New Product</button>
-        </div>
       </main>
     </div>
   );

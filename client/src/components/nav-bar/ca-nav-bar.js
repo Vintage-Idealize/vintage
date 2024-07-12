@@ -36,10 +36,18 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#B8860B', height: '4em' }}>
+    <AppBar 
+      position="static" 
+      sx={{ 
+        backgroundColor: 'white', 
+        height: '4em', 
+        borderBottom: '1px solid rgba(184, 134, 11, 0.3)',
+        boxShadow: '0 2px 4px rgba(184, 134, 11, 0.2)' 
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'white' }} />
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: '#B8860B' }} />
           <Typography
             variant="h6"
             noWrap
@@ -51,7 +59,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'white',
+              color: '#B8860B',
               textDecoration: 'none',
             }}
           >
@@ -67,7 +75,7 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: '#B8860B' }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -89,12 +97,14 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" sx={{ color: '#B8860B' }}>
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'white' }} />
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: '#B8860B' }} />
           <Typography
             variant="h5"
             noWrap
@@ -107,7 +117,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'white',
+              color: '#B8860B',
               textDecoration: 'none',
             }}
           >
@@ -118,7 +128,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#B8860B', display: 'block' }}
               >
                 {page}
               </Button>
@@ -149,7 +159,9 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center" sx={{ color: '#B8860B' }}>
+                    {setting}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

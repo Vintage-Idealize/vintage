@@ -14,6 +14,7 @@ body {
 .dashboard main h2 {
     margin-bottom: 20px;
     text-align: left;
+    color: #B8860B;
 }
 
 .charts-container {
@@ -22,8 +23,36 @@ body {
     margin-bottom: 20px;
 }
 
-.chart {
-    width: 48%;
+
+.line-chart{
+    width: 64%;  /*change later*/
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.chart-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.line-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.line-title{
+    font-weight: bold;
+    text-align: left;
+
 }
 
 .stats-container {
@@ -32,7 +61,7 @@ body {
     margin-bottom: 20px;
 }
 
-.stat {
+.stat,.chart {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -40,9 +69,15 @@ body {
     width: 30%;
 }
 
+.each-stat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 .actions-container {
     display: flex;
     justify-content: space-between;
+  
 }
 
 .actions-container button {
