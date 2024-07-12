@@ -112,8 +112,8 @@ const Dashboard = () => {
           <div className="stat">
             <h3>Sales static</h3>
             <div className='each-stat'><div className='stat-title'>Average Daily Sales</div><div className='stat-value'>LKR 20,000</div></div>
-            <div className='each-stat'><div className='stat-title'>Average Daily Orders</div><div className='stat-value'>LKR 20,000</div></div>
-            <div className='each-stat'><div className='stat-title'>Pending Orders</div><div className='stat-value'>LKR 20,000</div></div>
+            <div className='each-stat'><div className='stat-title'>Average Daily Orders</div><div className='stat-value'>500</div></div>
+            <div className='each-stat'><div className='stat-title'>Pending Orders</div><div className='stat-value'>300</div></div>
            
           </div>
           <div className="chart">
