@@ -2,58 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
-.header {
-    background-color: #b18a1b;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-.header .user-info {
-    display: flex;
-    align-items: center;
-}
-
-.header .user-info span {
-    margin-right: 10px;
-}
-
-.header .user-info img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.dashboard {
-    padding: 20px;
-}
 
 .dashboard main {
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin-top: 20px;
+   
 }
 
-.dashboard main h1 {
+.dashboard main h2 {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .charts-container {

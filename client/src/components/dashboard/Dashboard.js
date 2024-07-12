@@ -16,6 +16,7 @@ import {
 } from 'recharts';
 
 import './dashboard.css';
+import ResponsiveAppBar from '../nav-bar/ca-nav-bar';
 
 
 const dataSales = [
@@ -61,21 +62,9 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <header className="header">
-        <nav>
-          <a href="#">Logo</a>
-          <a href="#">Dashboard</a>
-          <a href="#">Product</a>
-          <a href="#">Order</a>
-          <div className="user-info">
-            <span>Ashan Induwara</span>
-            <img src="path_to_user_image" alt="User" />
-          </div>
-        </nav>
-      </header>
-
+      <ResponsiveAppBar position="sticky"/>
       <main>
-        <h1>Hello, Ashan!</h1>
+        <h2 className='hello'>Hello, Ashan!</h2>
         <div className="charts-container">
           <div className="chart">
             <ResponsiveContainer width="100%" height={300}>
