@@ -167,39 +167,32 @@ function EnhancedTableToolbar(props) {
           bgcolor: (theme) =>
             alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
         },
+        {
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+        }
       ]}
     >
-      {numSelected > 0 ? (
-        <Typography
-          sx={{ flex: '1 1 100%' }}
-          color="inherit"
-          variant="subtitle1"
-          component="div"
-        >
-          {numSelected} selected
-        </Typography>
-      ) : (
-        <Typography
-          sx={{ flex: '1 1 100%' }}
-          variant="h6"
-          id="tableTitle"
-          component="div"
-        >
-          Nutrition
-        </Typography>
-      )}
-      {numSelected > 0 ? (
+     
+        <div>
+         Search Orders
+         </div>
+         <div>
+          <IconButton>
+            <FilterListIcon />
+          </IconButton>
+         </div>
+
+         
+      {numSelected > 0 ?(
         <Tooltip title="Delete">
           <IconButton>
             <DeleteIcon />
           </IconButton>
         </Tooltip>
       ) : (
-        <Tooltip title="Filter list">
-          <IconButton>
-            <FilterListIcon />
-          </IconButton>
-        </Tooltip>
+        <div></div>
       )}
     </Toolbar>
   );
