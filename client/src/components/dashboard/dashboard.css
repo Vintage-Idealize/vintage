@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.dashboard main {
+    background-color: white;
+    padding: 20px;
+   
+}
+
+.dashboard main h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #B8860B;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.line-chart{
+    width: 64%;  /*change later*/
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.chart-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.line-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.line-header div h3{
+    text-align: left;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat,.chart {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 30%;
+}
+
+.each-stat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-value{
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.actions-container button {
+    padding: 10px 20px;
+    background-color: #b18a1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions-container button:hover {
+    background-color: #9a7415;
+}

@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #b18a1b;
+    padding: 20px;
+    color: white;
+    width: 100%; /* Ensure header spans full width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit the max width for better design */
+    margin: 0 auto; /* Center the nav */
+    width: 100%; /* Ensure nav spans full width */
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px; /* Add horizontal padding to each link */
+}
+
+.product-view-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image img {
+    width: 100%;
+    height: 600px; /* Increased the height to make the main image frame bigger */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 10px; /* Reduced the bottom margin */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.thumbnail-images-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Reduced the gap between thumbnails */
+}
+
+.thumbnail {
+    width: 80px; /* Reduced the width to fit the new layout */
+    height: 80px; /* Reduced the height to fit the new layout */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    overflow: hidden; /* Ensures the image fits within the thumbnail div */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.thumbnail.selected {
+    border: 2px solid #b18a1b; /* Adds a border to indicate the selected thumbnail */
+}
+
+.product-info {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start; /* Align content to the top */
+   text-align: left; /* Align text to the left */
+}
+
+.product-info h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-options {
+    margin-bottom: 20px;
+}
+
+.size-options, .color-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add more space between size and color options */
+}
+
+.size-options span, .color-options span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.size-options button, .color-options button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.size-options button:hover, .color-options button:hover {
+    background-color: #f5f5f5;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #b18a1b;
+    margin-bottom: 20px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-control button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.quantity-control input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    border: none;
+    background-color: #b18a1b;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.add-to-cart:hover {
+    background-color: #9a7415;
+}
+
+.wishlist {
+    cursor: pointer;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.additional-info {
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.additional-info details {
+    margin-bottom: 10px;
+}
+
+.additional-info summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.additional-info summary:hover {
+    color: #b18a1b;
+}

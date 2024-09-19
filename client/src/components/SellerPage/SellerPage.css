@@ -1,0 +1,100 @@
+/* src/components/SellerPage.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.seller-description {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+    max-width: 100%; /* Increase max width */
+    margin: 20px auto; /* Center the text block */
+    line-height: 1.6; /* Increase line height for better readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for better visual separation */
+    border-radius: 10px; /* Optional: rounded corners for a more modern look */
+    padding: 40px; /* Increase padding */
+}
+
+.seller-description h1 {
+    font-size: 28px; /* Adjust the heading size */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #b18a1b; /* Change heading color to gold */
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add margin-left */
+    padding-left: 20px;
+}
+
+.filters h2 {
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px; /* Make font smaller */
+    color: #b18a1b; /* Change text color to gold */
+}
+
+.filters ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.filters ul li {
+    margin-bottom: 10px;
+    font-size: 18px; /* Make font smaller */
+    color: #b18a1b; /* Change text color to gold */
+    align-items: left;
+}
+
+.products {
+    flex: 3;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 220px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-name, .product-price {
+    margin: 10px 0;
+}
